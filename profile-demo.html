@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+   
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <style>
+         * {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+         }
+         html, body {
+            height : 100%;
+            margin : 0px;
+         }
+         div, span {
+            display :inline-block;
+         }
+
+      .location {
+         padding : 1rem;
+         color: #4b00a8;
+         line-height: 2rem;
+         font-size: 1rem;
+      }
+
+      .contact {
+         border-top: 2px solid #4b00a8;
+         padding : 2rem 0 2rem 0;
+      }
+
+      .contact div {
+         padding : 1rem;
+      }
+
+      .contact .contact-label {
+         width : 7rem;
+         font-weight: 800;
+         color: #4b00a8;
+      }
+
+      .about{
+      margin: 4em 0;
+      padding: 1em;
+      position: relative;
+      }
+      .about h1{
+      color:#4b00a8;
+      margin: 1rem 0 0rem 0rem;
+      }
+      .about img{
+         height: 20rem;
+         width: 20rem;
+         border-radius: 50%;
+         margin: auto;
+         top: 0;
+         bottom: 0;
+         position: absolute;        
+      }
+      .about span-remove-me{
+      display: block;
+      color: #888;
+      position: absolute;
+      left: 115px;
+      }
+      .about .desc{
+         padding-right: 2rem;
+         border-left2:4px solid #4b00a8;
+      }
+      .about .desc h3{
+         color: #4b00a8;
+         margin: 0em 0 1em 1em;
+      }
+      .about .desc p{
+      line-height:2;
+      color:#888;
+      }
+      .navbar{ background:#000000;}
+      .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+      .nav-link{ margin-right: 1em !important;}
+      .nav-link:hover{ background: #323155; color: #e8e8ec; }
+      .navbar-collapse{ justify-content: flex-end;}
+      .navbar-toggler{  background:#fff !important;}
+      .bg-dark{
+      background-color:#1c1b43!important
+      }
+      .bg-primary{
+      background-color:#1c1b43!important
+      }
+      </style>
+   </head>
+   <body>
+   <header class="main-header"></header>
+   <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+      <a class="navbar-brand" href="#">#stacker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+         <ul class="navbar-nav mr-4">
+            <li class="nav-item"> <a class="nav-link " data-value="" href="/channels.html">Channels</a></li>   
+            <li class="nav-item"> <a class="nav-link " data-value="" href="/login.html">Logout</a></li>
+         </ul>
+      </div>
+   </nav>
+   <section class="main-section">
+   <header></header>
+<nav></nav>
+<section id="messages-list">
+   <div class="row about">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Joe_Satriani_2005.jpg/200px-Joe_Satriani_2005.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 desc">
+         <div class="col-lg-5">
+            <h1>Ramses Trejo</h1>
+            <h3>@ramses</h3>
+         </div>
+         <div class="col-lg-4 location">
+            <i class="fas fa-map-marker-alt"></i>
+            Toronto, ON
+         </div>         
+
+         <p>
+            Ramses is a personable Instructor, specializing in Technology and Business, driven by enabling students achieve learning success. Exhilarated about use of digital technologies to motivate and engage students for learning in both face-to-face and online environments (blended).
+         </p>
+         <p>
+          Accomplished and passionate Business Consultant, Digital Marketer, Systems Architect and Learning enthusiast with close to 25 years of well-rounded international (Canada, USA, Mexico, South Korea, Norway) work experience.</p>        
+         <div class="col-lg-12 contact">
+            <div class="col-lg-12">
+               <span class="contact-label">Phone</span><span class="contact-value">416-343-3434</span>   
+            </div>
+            <div class="col-lg-12">
+               <span class="contact-label">Address</span><span class="contact-value">64 Cool Rd., Toronto, ON</span>
+            </div>
+            <div class="col-lg-12">
+               <span class="contact-label">Email</span><span class="contact-value">ramses@yorku.ca</span>   
+            </div>   
+         </div>             
+      </div>
+   </div>
+</section>
+</section>
+</body>
+</html>

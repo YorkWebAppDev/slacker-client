@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+   
+<html>
+   	
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="messages-demo.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">		
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Montserrat', sans-serif;
+			}
+			html, body {
+				height : 100%;
+				margin : 0px;
+			}
+			aside {
+				display :inline-block;
+				height : 100%;
+				width : 15%;
+				float : left;
+				background-color: #4b00a8;
+				padding-top: 2rem;
+			}
+
+
+
+			.main-header {
+				height : 30px;
+			}
+
+			.main-section {
+				display :inline-block;
+				width : 85%;	
+				float : right;		
+				padding : 10px 20px;	
+				height: 100%;
+				margin-top : 2.5rem;
+			}
+
+			.side-user, .side-title , .side-channels {
+				color : #cfcfd1;
+				margin: 10px 10%;
+			}
+			.side-title {
+				font-weight: bolder;
+				font-size: 2em;
+				text-align: center;
+			}
+
+			.side-channels {
+				font-weight: bolder;
+				font-size: 1rem;
+				text-align: center;
+			}
+
+			.side-channel {
+				font-weight: normal;
+				font-size: 1em;
+				text-align: left;
+			}			
+
+			div {
+				display :inline-block;
+			}
+
+			#messages-list {
+				margin : auto 0;
+    			height: 35em;
+    			overflow-y: scroll;
+    			border: 1px blue solid;		
+    			padding: 0.2rem 1rem;		
+			}
+
+
+			.message-row {
+				display: inline-block;
+				width :100%;
+				margin-bottom: 20px;
+			}
+
+			.message-image {
+				display : inline-block;
+				width : 10%;	
+				float : left;
+				min-width: 30px;
+				max-width: 30px;			
+			}
+
+			.message-image img {
+				max-width: 60px;
+			}
+
+			.message-meta-text {
+				display : inline-block;
+				width : 90%;	
+				float : right;	
+				padding : 0.2em 0.2em 0.2em 0.2em;					
+			}				
+
+			.message-text {
+				display : inline-block;
+				width : 100%;	
+				float : left;	
+			}	
+			.message-time {
+				display : inline-block;
+				font-size: 0.8rem;	
+			}				
+	
+			.message-author {
+				display: inline-block;
+				vertical-align: top;				
+				font-weight: bold;	
+				padding : 0.2em 2em 0.2em 0em;
+				width : 5rem;	
+			}		
+
+			.message-box {
+				width : 80%;
+				font-size: 1em;
+				margin : 1em, auto;
+				height : 5em;
+			}		
+
+			.footer-block {
+				vertical-align: bottom;
+				position: fixed;
+				width: 95%;
+				bottom : 2em;
+				height: 5em;
+			}	
+
+			/////
+
+		.navbar{ background:#000000;}
+		.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+		.nav-link{ margin-right: 1em !important;}
+		.nav-link:hover{ background: #323155; color: #e8e8ec; }
+		.navbar-collapse{ justify-content: flex-end;}
+		.navbar-toggler{  background:#fff !important;}
+		.bg-dark{
+		background-color:#1c1b43!important
+		}
+		.bg-primary{
+		background-color:#1c1b43!important
+		}
+
+
+		</style>
+	</head>
+
+	<body>
+		<header class="main-header"></header>
+		 <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+		 	<a class="navbar-brand" href="#">#stacker</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+ 				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<ul class="navbar-nav mr-4"> 
+						<li class="nav-item"> <a class="nav-link " data-value="" href="/profile.html">Profile</a></li>	
+						<li class="nav-item"> <a class="nav-link " data-value="" href="/login.html">Logout</a></li>
+					</ul> 
+			</div>
+		</nav>		
+		<aside>		
+				<section class="side-user"><p>Ramses</p></section>
+				<section class="side-channels"><p>Channels</p>
+					
+					<article class="side-channel"><p>Sports</p></article>
+					<article class="side-channel"><p>Shows</p></article>
+					<article class="side-channel"><p>Movies</p></article>
+					<article class="side-channel"><p>Pets</p></article>
+				</section>
+				<section></section>
+		</aside>
+		<section class="main-section">
+			<header></header>
+			<nav></nav>			
+			<section id="messages-list">
+
+				<!-- article class="message-row">
+					<div class="message-image">
+						<image src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=25" />
+					</div>
+					<div class="message-meta-text">
+						<span class="message-author">Kat</span><span class="message-time">12:04 PM</span>
+						<span class="message-text">I'm changing the due date on the landing page because I need more time. The designs look great!</span>
+					</div>
+				</article>
+				<article class="message-row">
+					<div class="message-image">
+						<image src="https://images.pexels.com/photos/1498335/pexels-photo-1498335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=25" />
+					</div>
+					<div class="message-meta-text">
+						<span class="message-author">Ben</span><span class="message-time">12:04 PM</span>		
+						<span class="message-text">I'm changing the due date on the landing page because I need more time. The designs look great!</span>
+					</div>
+				</article -->				
+			
+			</section>
+			<footer>
+				<div class="footer-block">
+					<form id="message-form" method="POST" action="/messages/new">
+						<textarea rows="4" class="message-box" placeholder="Enter message"></textarea>
+						<input type="hidden" id="user" value="ramses"></input>
+					</form>
+				</div>
+				
+			</footer>
+		</section>
+	</body>
+</html>
